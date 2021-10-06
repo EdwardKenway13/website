@@ -12,18 +12,6 @@ print("Initializing Jarvis....")
 MASTER = "Harsha"
 
 
-engine = pyttsx3.init('nsss')
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)
-popular_websites = {'google': 'https://www.google.com',
-                    'youtube': 'https://www.youtube.com',
-                    'wikipedia': 'https://www.wikipedia.org',
-                    'amazon': 'https://www.amazon.com'}
-search_engines = {'google': 'https://www.google.com',
-                  'youtube': 'https://www.youtube.com',
-                  'bing': 'https://www.bing.com'}
-
-
 def open_url(url):
     webbrowser.open(url)
     chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
